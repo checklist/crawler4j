@@ -139,6 +139,7 @@ public class PageFetcher {
         }
         clientBuilder.setDefaultRequestConfig(requestConfig);
         clientBuilder.setConnectionManager(connectionManager);
+        clientBuilder.setConnectionManagerShared(true);
         clientBuilder.setUserAgent(config.getUserAgentString());
         clientBuilder.setDefaultHeaders(config.getDefaultHeaders());
 
